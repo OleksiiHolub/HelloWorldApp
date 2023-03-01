@@ -14,10 +14,19 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        helloWorldLebel.isHidden = true
+        showTextButton.layer.cornerRadius = 10
+        helloWorldLebel.textColor = .magenta
     }
 
     @IBAction func showTextButtonPressed() {
+        if helloWorldLebel.isHidden {
+            helloWorldLebel.isHidden = false
+            showTextButton.setTitle("Hide Text", for: .normal)
+        } else {
+            helloWorldLebel.isHidden = true
+            showTextButton.setTitle("Show Text", for: .normal)
+        }
     }
     
 }
