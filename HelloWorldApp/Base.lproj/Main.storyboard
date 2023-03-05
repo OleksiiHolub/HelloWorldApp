@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,24 +13,24 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloWorldApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, World!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="IIp-XE-bsP">
-                                <rect key="frame" x="66" y="119" width="243" height="36.5"/>
+                                <rect key="frame" x="66" y="163" width="296" height="36.333333333333343"/>
                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="31"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="HWt-Py-8lG">
-                                <rect key="frame" x="87.5" y="430" width="200" height="137"/>
+                                <rect key="frame" x="114" y="648" width="200" height="144"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8uD-Cb-FDe">
-                                        <rect key="frame" x="0.0" y="0.0" width="200" height="58.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="62"/>
                                         <color key="backgroundColor" systemColor="systemPinkColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Show Text">
-                                            <fontDescription key="titleFontDescription" type="system" pointSize="37"/>
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="40"/>
                                             <color key="baseForegroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
                                         </buttonConfiguration>
                                         <connections>
@@ -38,11 +38,11 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1p-4J-IOC">
-                                        <rect key="frame" x="0.0" y="78.5" width="200" height="58.5"/>
+                                        <rect key="frame" x="0.0" y="82" width="200" height="62"/>
                                         <color key="backgroundColor" systemColor="systemPinkColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Go 2 SVC">
-                                            <fontDescription key="titleFontDescription" type="system" pointSize="37"/>
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="40"/>
                                             <color key="baseForegroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
                                         </buttonConfiguration>
                                         <connections>
@@ -52,6 +52,7 @@
                                     </button>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="0Bu-KK-l22"/>
                                     <constraint firstAttribute="width" constant="200" id="5NC-ha-z4k"/>
                                 </constraints>
                             </stackView>
@@ -60,6 +61,7 @@
                         <color key="backgroundColor" red="0.91976243257522583" green="0.54032450495584161" blue="0.50924830187064518" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IIp-XE-bsP" secondAttribute="trailing" constant="66" id="Dh0-Le-6C5"/>
+                            <constraint firstItem="HWt-Py-8lG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Edf-Na-Q5X"/>
                             <constraint firstItem="IIp-XE-bsP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="66" id="MW9-aL-41o"/>
                             <constraint firstItem="IIp-XE-bsP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="119" id="Sua-hx-E20"/>
                             <constraint firstItem="HWt-Py-8lG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W7t-vG-U5X"/>
@@ -80,17 +82,17 @@
             <objects>
                 <viewController id="ljI-un-0YQ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7ZG-JY-tGN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="QYZ-tT-0ui">
-                                <rect key="frame" x="16" y="60" width="343" height="527"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="QYZ-tT-0ui">
+                                <rect key="frame" x="16" y="104" width="396" height="708"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SwiftImage" translatesAutoresizingMaskIntoConstraints="NO" id="cdx-32-58R">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="253.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="396" height="346"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Моя перша аплікуха на Swift" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITf-v5-VsY">
-                                        <rect key="frame" x="0.0" y="273.5" width="343" height="253.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Моя перша аплікуха на Swift" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITf-v5-VsY">
+                                        <rect key="frame" x="0.0" y="362" width="396" height="346"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
